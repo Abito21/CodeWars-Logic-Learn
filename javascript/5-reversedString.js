@@ -8,22 +8,22 @@ Complete the solution so that it reverses the string passed into it.
 
 // First Logic
 // function solution(str){
-//   let result = ""
+//   let result = "";
 //   for (let i = str.length - 1; i >= 0; i--) {
-//     result += str[i]
+//     result += str[i];
 //   }
-//   return result
+//   return result;
 // }
 
 // Second Logic
 function solution(str){
-    let splitString = str.split("")
+    let splitString = str.split("");
 
-    let reverseArray = splitString.reverse()
+    let reverseArray = splitString.reverse();
 
-    let joinArray = reverseArray.join("")
+    let joinArray = reverseArray.join("");
 
-    return joinArray
+    return joinArray;
 }
 
-console.log(solution("World"))
+console.log(solution("World"));

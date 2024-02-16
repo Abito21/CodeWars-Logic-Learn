@@ -13,8 +13,14 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 // };
 
 // Second Logic
+// function removeChar(str) {
+//     let newChar = str.substring(1, str.length - 1)
+//     return newChar
+// };
+
+// Third Logic
 function removeChar(str) {
-    let newChar = str.substring(1, str.length - 1)
+    let newChar = str.slice(1, -1)
     return newChar
 };
 

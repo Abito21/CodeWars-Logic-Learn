@@ -4,12 +4,18 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 */
 
 // First Logic
+// function removeChar(str) {
+//     let newChar = ""
+//     for (i = 1; i < str.length - 1; i++) {
+//         newChar += str[i]
+//     }
+//     return newChar;
+// };
+
+// Second Logic
 function removeChar(str) {
-    let newChar = ""
-    for (i = 1; i < str.length - 1; i++) {
-        newChar += str[i]
-    }
-    return newChar;
+    let newChar = str.substring(1, str.length - 1)
+    return newChar
 };
 
 console.log(removeChar("Helloo"));

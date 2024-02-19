@@ -19,13 +19,16 @@ Example :
 // }
 
 // Second Logic : using for condition
-var summation = function (num) {
-    // Code here
-    let sum = 0
-    for (i = 1; i <= num; i++) {
-        sum += i
-    }
-    return sum
-}
+// var summation = function (num) {
+//     // Code here
+//     let sum = 0
+//     for (i = 1; i <= num; i++) {
+//         sum += i
+//     }
+//     return sum
+// }
+
+// Third Logic
+const summation = num => num * (num + 1) / 2 
 
 console.log(summation(8))

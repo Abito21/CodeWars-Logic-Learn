@@ -8,11 +8,21 @@ Example :
 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 */
 
-// First Logic : using while condition
+// First Logic : using for condition
+// var summation = function (num) {
+//     // Code here
+//     let sum = 0
+//     for (i = num; i >= 1; i--) {
+//         sum += i
+//     }
+//     return sum
+// }
+
+// Second Logic : using for condition
 var summation = function (num) {
     // Code here
     let sum = 0
-    for (i = num; i >= 1; i--) {
+    for (i = 1; i <= num; i++) {
         sum += i
     }
     return sum

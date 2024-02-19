@@ -29,6 +29,11 @@ Example :
 // }
 
 // Third Logic
-const summation = num => num * (num + 1) / 2 
+// const summation = num => num * (num + 1) / 2 
+
+// Fourth Logic using reduce
+const summation = num => (
+    Array(num).fill(true).reduce((sum, item, index) => sum + index + 1, 0)
+)
 
 console.log(summation(8))

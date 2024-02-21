@@ -24,9 +24,18 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 // }
 
 // Third Logic
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min.apply(null, args);
+//     }
+// }
+
+// Fourth Logic
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      return Math.min.apply(null, args);
+      return args.reduce(function(prev, curr, index, array) {
+        return prev < curr ? prev : curr;
+      });
     }
 }
 

@@ -9,10 +9,17 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 */
 
 // First Logic
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       const sorted = args.sort((num1, num2) => num1 - num2)
+//       return sorted[0]
+//     }
+// }
+
+// Second logic
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      const sorted = args.sort((num1, num2) => num1 - num2)
-      return sorted[0]
+      return Math.min(...args)
     }
 }
 

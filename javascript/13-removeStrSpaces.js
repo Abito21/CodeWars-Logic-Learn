@@ -23,8 +23,11 @@ Example :
 // }
 
 // Second Logic 
-function noSpace(x){
-    return x.replace(/\s/g, '');
-}
+// function noSpace(x){
+//     return x.replace(/\s/g, '');
+// }
+
+// Third Logic
+function noSpace(x){return x.split(' ').join('')}
 
 console.log(noSpace("Iam heroo..! "))

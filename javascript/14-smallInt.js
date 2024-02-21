@@ -40,20 +40,31 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 // }
 
 // Fifth Logic
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       var lowest;
+//       for(var i in args){
+//         if(i==0){
+//           lowest = args[i];
+//         }
+//         else {
+//           if(lowest >= args[i]){
+//           lowest = args[i];
+//           }
+//         }
+//       }
+//       return lowest;
+//     }
+// }
+
+// Sixth Logic
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      var lowest;
-      for(var i in args){
-        if(i==0){
-          lowest = args[i];
-        }
-        else {
-          if(lowest >= args[i]){
-          lowest = args[i];
-          }
-        }
+      let min = args[0];
+      for(let i = 0; i< args.length; i++) {
+        min = min < args[i] ? min : args[i]
       }
-      return lowest;
+      return min;
     }
 }
 

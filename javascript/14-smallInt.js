@@ -31,11 +31,29 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 // }
 
 // Fourth Logic
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return args.reduce(function(prev, curr, index, array) {
+//         return prev < curr ? prev : curr;
+//       });
+//     }
+// }
+
+// Fifth Logic
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      return args.reduce(function(prev, curr, index, array) {
-        return prev < curr ? prev : curr;
-      });
+      var lowest;
+      for(var i in args){
+        if(i==0){
+          lowest = args[i];
+        }
+        else {
+          if(lowest >= args[i]){
+          lowest = args[i];
+          }
+        }
+      }
+      return lowest;
     }
 }
 

@@ -10,16 +10,21 @@ Example :
 */
 
 // First Logic
-function noSpace(x){
-    let newString = ""
-    for (i = 0; i < x.length; i++) {
-        if (x[i] === " ") {
+// function noSpace(x){
+//     let newString = ""
+//     for (i = 0; i < x.length; i++) {
+//         if (x[i] === " ") {
             
-        } else {
-            newString += x[i]
-        }
-    }
-    return newString
+//         } else {
+//             newString += x[i]
+//         }
+//     }
+//     return newString
+// }
+
+// Second Logic 
+function noSpace(x){
+    return x.replace(/\s/g, '');
 }
 
 console.log(noSpace("Iam heroo..! "))

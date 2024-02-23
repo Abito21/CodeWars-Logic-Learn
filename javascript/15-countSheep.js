@@ -35,4 +35,16 @@ function countSheeps(sheep) {
     return sheep.filter(Boolean).length;
 }
 
+// Third Logic 
+function countSheeps(arrayOfSheep) {
+    var count = 0;
+    
+    arrayOfSheep.forEach( function (sheep) {
+      if (sheep)
+        count++;
+    });
+    
+    return count;
+}
+
 console.log(countSheeps([undefined,null,false,true,false,true]))

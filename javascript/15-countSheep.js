@@ -36,15 +36,27 @@ Hint: Don't forget to check for bad values like null/undefined
 // }
 
 // Third Logic 
+// function countSheeps(arrayOfSheep) {
+//     var count = 0;
+    
+//     arrayOfSheep.forEach( function (sheep) {
+//       if (sheep)
+//         count++;
+//     });
+
+//     return count;
+// }
+
+// Fourth Logic
 function countSheeps(arrayOfSheep) {
-    var count = 0;
+    // TODO
+    var num = 0;
     
-    arrayOfSheep.forEach( function (sheep) {
-      if (sheep)
-        count++;
-    });
-    
-    return count;
-}
+    for(var i = 0; i < arrayOfSheep.length; i++)
+      if(arrayOfSheep[i] == true)
+        num++;
+        
+    return num;
+  }
 
 console.log(countSheeps([undefined,null,false,true,false,true]))

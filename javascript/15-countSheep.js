@@ -31,9 +31,9 @@ Hint: Don't forget to check for bad values like null/undefined
 
 // Second Logic
 // Filter function is a callback Function that return true condition.
-function countSheeps(sheep) {
-    return sheep.filter(Boolean).length;
-}
+// function countSheeps(sheep) {
+//     return sheep.filter(Boolean).length;
+// }
 
 // Third Logic 
 function countSheeps(arrayOfSheep) {

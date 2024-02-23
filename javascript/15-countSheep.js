@@ -16,17 +16,23 @@ Hint: Don't forget to check for bad values like null/undefined
 */
 
 // First Logic
+// function countSheeps(sheep) {
+//     // TODO
+//     let count = 0
+//     for (i = 0; i < sheep.length; i++) {
+//         if (sheep[i] == true) {
+//             count += 1
+//         } else {
+//             count += 0
+//         }
+//     }
+//     return count
+// }
+
+// Second Logic
+// Filter function is a callback Function that return true condition.
 function countSheeps(sheep) {
-    // TODO
-    let count = 0
-    for (i = 0; i < sheep.length; i++) {
-        if (sheep[i] == true) {
-            count += 1
-        } else {
-            count += 0
-        }
-    }
-    return count
+    return sheep.filter(Boolean).length;
 }
 
-console.log(countSheeps([undefined,null,false,true]))
+console.log(countSheeps([undefined,null,false,true,false,true]))

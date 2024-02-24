@@ -1,1 +1,1 @@
-My playground to learn logic from codewars challenge.
+My playground to learn logic from codewars challenge. Javascript, Python, C and SQL.

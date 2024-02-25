@@ -12,19 +12,35 @@ Example :
 ('/', 49, 7) --> 7
 */
 
-// First Logic
-function basicOp(operation, value1, value2){
-    //Code
-    if (operation == "+") {
-        return value1 + value2
-    } else if (operation == "-") {
-        return value1 - value2
-    } else if (operation == "*") {
-        return value1 * value2
-    } else if (operation == "/") {
-        return value1 / value2
+// First Logic : using if else
+// function basicOp(operation, value1, value2){
+//     //Code
+//     if (operation == "+") {
+//         return value1 + value2
+//     } else if (operation == "-") {
+//         return value1 - value2
+//     } else if (operation == "*") {
+//         return value1 * value2
+//     } else if (operation == "/") {
+//         return value1 / value2
+//     }
+//     return 0;
+// }
+
+// Second Logic : using switch case
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+':
+            return value1 + value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return 0;
     }
-    return 0;
 }
 
 console.log(basicOp("+", 4, 7))

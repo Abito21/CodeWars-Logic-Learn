@@ -1,1 +1,1 @@
-My playground to learn logic from codewars challenge. Javascript, Python, C and SQL.
+My playground to learn logic from codewars challenge. Programming language that i use is Javascript, Python, C and SQL.

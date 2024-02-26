@@ -19,10 +19,17 @@ Example :
 // }
 
 // Second Logic : using parsInt() function
+// const stringToNumber = function(str){
+//     // put your code here
+//     // return typeof(str) // to check data type
+//     return parseInt(str);
+// }
+
+// Third Logic : using parsFloat() function
 const stringToNumber = function(str){
     // put your code here
     // return typeof(str) // to check data type
-    return parseInt(str);
+    return parseFloat(str);
 }
 
-console.log(stringToNumber("17.5"))
+console.log(stringToNumber("17.55"))

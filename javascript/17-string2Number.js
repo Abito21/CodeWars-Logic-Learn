@@ -12,10 +12,17 @@ Example :
 */
 
 // First Logic : using Number() function
+// const stringToNumber = function(str){
+//     // put your code here
+//     // return typeof(str) // to check data type
+//     return Number(str);
+// }
+
+// Second Logic : using parsInt() function
 const stringToNumber = function(str){
     // put your code here
     // return typeof(str) // to check data type
-    return Number(str);
+    return parseInt(str);
 }
 
-console.log(stringToNumber("17"))
+console.log(stringToNumber("17.5"))

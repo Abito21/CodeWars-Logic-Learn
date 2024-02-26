@@ -26,10 +26,18 @@ Example :
 // }
 
 // Third Logic : using parsFloat() function
+// const stringToNumber = function(str){
+//     // put your code here
+//     // return typeof(str) // to check data type
+//     return parseFloat(str);
+// }
+
+// Fourth Logic : using case plus with character itself
+// If we have character string and plus with same character string, the system define the new data type of character is number (it can be int or float).
 const stringToNumber = function(str){
     // put your code here
     // return typeof(str) // to check data type
-    return parseFloat(str);
+    return +str;
 }
 
 console.log(stringToNumber("17.55"))

@@ -28,14 +28,20 @@ https://en.wikipedia.org/wiki/Century
 // }
 
 // Second logic : using Math.ceil function
+// function century(year) {
+//     // Finish this :)
+//     return Math.ceil(year / 100);
+// }
+
+// Third logic : using formula
 function century(year) {
     // Finish this :)
-    return Math.ceil(year / 100);
+    return (year + 99) / 100 | 0;
 }
 
 console.log(century(1));
 console.log(century(99));
-console.log(century(1700));
+console.log(century(1702));
 console.log(century(1988));
 console.log(century(2000));
 console.log(century(2001));

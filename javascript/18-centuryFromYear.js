@@ -16,15 +16,21 @@ https://en.wikipedia.org/wiki/Century
 */
 
 // First Logic : using for
+// function century(year) {
+//     // Finish this :)
+//     let result = 0
+//     for (let i = 0; i < year; i++) {
+//         if (i % 100 === 0) {
+//             result ++
+//         }
+//     }
+//     return result;
+// }
+
+// Second logic : using Math.ceil function
 function century(year) {
     // Finish this :)
-    let result = 0
-    for (let i = 0; i < year; i++) {
-        if (i % 100 === 0) {
-            result ++
-        }
-    }
-    return result;
+    return Math.ceil(year / 100);
 }
 
 console.log(century(1));

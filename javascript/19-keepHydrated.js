@@ -27,7 +27,12 @@ time = 11.8--> litres = 5
 // }
 
 // Third Logic : using bitwise operator
-litres = t => ~~(t / 2)
+// litres = t => ~~(t / 2)
+
+// Fourth Logic : using parseInt()
+function litres(time) {
+    return parseInt(time / 2)
+}
 
 console.log(litres(2))
 console.log(litres(1.4))

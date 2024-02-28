@@ -15,11 +15,15 @@ time = 11.8--> litres = 5
 */
 
 // First Logic : using Math.floor() function
+// function litres(time) {
+//     let cycle = 0.5
+//     let totalLitres = time * cycle
+//     return Math.floor(totalLitres)
+// }
+
+// Second Logic : using Math.floor() function best practice
 function litres(time) {
-    let cycle = 0.5
-    let totalLitres = time * cycle
-    // return Math.round(totalLitres)
-    return Math.floor(totalLitres)
+    return Math.floor(time * 0.5) // or you can use Math.floor(time / 2)
 }
 
 console.log(litres(2))

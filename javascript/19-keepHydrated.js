@@ -22,9 +22,12 @@ time = 11.8--> litres = 5
 // }
 
 // Second Logic : using Math.floor() function best practice
-function litres(time) {
-    return Math.floor(time * 0.5) // or you can use Math.floor(time / 2)
-}
+// function litres(time) {
+//     return Math.floor(time * 0.5) // or you can use Math.floor(time / 2)
+// }
+
+// Third Logic : using bitwise operator
+litres = t => ~~(t / 2)
 
 console.log(litres(2))
 console.log(litres(1.4))

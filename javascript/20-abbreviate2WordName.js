@@ -32,7 +32,12 @@ patrick feeney => P.F
 // }
 
 // Fourth Logic : using RegExp
-const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+// const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+
+// Fifth Logic : using indexOf(" ")
+function abbrevName(name){
+    return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();
+}
 
 console.log(abbrevName("Abid Juliant"))
 console.log(abbrevName("Juliant Indraswara"))

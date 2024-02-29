@@ -35,8 +35,16 @@ patrick feeney => P.F
 // const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
 
 // Fifth Logic : using indexOf(" ")
+// function abbrevName(name){
+//     return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();
+// }
+
+// Sixth Logic : using chaAt()
 function abbrevName(name){
-    return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();
+    const [firstName, lastName] = name.split(' ')
+    const firstInitial = firstName.charAt(0).toUpperCase()
+    const secondInitial = lastName.charAt(0).toUpperCase()
+    return firstInitial + '.' + secondInitial
 }
 
 console.log(abbrevName("Abid Juliant"))

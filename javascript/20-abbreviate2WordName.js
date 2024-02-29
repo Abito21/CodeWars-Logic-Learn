@@ -19,17 +19,20 @@ patrick feeney => P.F
 // }
 
 // Second Logic : using split(), map() and array
-function abbrevName(name){
-    // code away
-    let nameArray = name.split(" ");
-    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
-}
+// function abbrevName(name){
+//     // code away
+//     let nameArray = name.split(" ");
+//     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
 
 // Third Logic : using split(), map(), substr() and join()
-function abbrevName(name){
-    // code away
-    return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
-}
+// function abbrevName(name){
+//     // code away
+//     return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
+// }
+
+// Fourth Logic : using RegExp
+const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
 
 console.log(abbrevName("Abid Juliant"))
 console.log(abbrevName("Juliant Indraswara"))

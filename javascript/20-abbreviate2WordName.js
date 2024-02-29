@@ -12,10 +12,17 @@ patrick feeney => P.F
 */
 
 // First Logic : using split(), map() and join()
+// function abbrevName(name){
+//     // code away
+//     let initName = name.split(" ").map((word) => word[0].toUpperCase()).join(".")
+//     return initName
+// }
+
+// Second Logic : using split(), map() and array
 function abbrevName(name){
     // code away
-    let initName = name.split(" ").map((word) => word[0].toUpperCase()).join(".")
-    return initName
+    let nameArray = name.split(" ");
+    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
 
 console.log(abbrevName("Abid Juliant"))

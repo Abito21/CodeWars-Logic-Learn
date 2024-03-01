@@ -25,4 +25,14 @@ function digitize(n) {
     return numArr;
 }
 
+// Third Logic : using for condition number
+const digitize = (x) => {
+    x = `${x}`.split('').reverse();
+    let a = []
+    for(let i = 0; i < x.length; i++){
+      a.push(+x[i])
+    }
+    return a
+}
+
 console.log(digitize(35231))

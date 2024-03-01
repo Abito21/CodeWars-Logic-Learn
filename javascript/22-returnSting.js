@@ -10,6 +10,7 @@ Make a function that will return a greeting statement that uses an input; your p
 // function greet(name){
 //     //your code here
 //     return `Hello, ${name} how are you doing today?`
+//     // return name ? `Hello, ${name} how are you doing today?` : ``;
 // }
 
 // Second Logic : using plus string
@@ -25,8 +26,14 @@ Make a function that will return a greeting statement that uses an input; your p
 // }
 
 // Fourth Logic : using replace() function
-function greet(name){
-    return "Hello, <name> how are you doing today?".replace("<name>", name);
+// function greet(name){
+//     return "Hello, <name> how are you doing today?".replace("<name>", name);
+// }
+
+// Fifth Logic : using join() array function
+const greet = function(name){
+    const arr = ['Hello,', name,'how', 'are', 'you', 'doing', 'today?']
+    return arr.join(' ')
 }
 
 console.log(greet("Abid"))

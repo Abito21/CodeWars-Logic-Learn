@@ -15,24 +15,37 @@ Output :
 // }
 
 // Second Logic : using while condition
-function digitize(n) {
-    //code here
-    let numArr = [];
-    while(n > 0){
-        numArr.push(n % 10);
-        n = Math.floor(n/10);
-    }
-    return numArr;
-}
+// function digitize(n) {
+//     //code here
+//     let numArr = [];
+//     while(n > 0){
+//         numArr.push(n % 10);
+//         n = Math.floor(n/10);
+//     }
+//     return numArr;
+// }
 
 // Third Logic : using for condition number
-const digitize = (x) => {
-    x = `${x}`.split('').reverse();
-    let a = []
-    for(let i = 0; i < x.length; i++){
-      a.push(+x[i])
+// const digitize = (x) => {
+//     x = `${x}`.split('').reverse();
+//     let a = []
+//     for(let i = 0; i < x.length; i++){
+//       a.push(+x[i])
+//     }
+//     return a
+// }
+
+// Fourth Logic : using for condition string
+function digitize(n) {
+    //code here
+    let num = String(n);
+    let newArray = [];
+    
+    for (let i = num.length-1; i>=0; i--) {
+      let element = Number(num[i]);
+      newArray.push(element); 
     }
-    return a
+    return newArray;
 }
 
 console.log(digitize(35231))

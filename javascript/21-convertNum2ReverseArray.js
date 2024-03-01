@@ -9,9 +9,20 @@ Output :
 */
 
 // First Logic : using string(), split(), map() and reverse()
+// function digitize(n) {
+//     //code here
+//     return String(n).split("").map(Number).reverse()
+// }
+
+// Second Logic : using while condition
 function digitize(n) {
     //code here
-    return String(n).split("").map(Number).reverse()
+    let numArr = [];
+    while(n > 0){
+        numArr.push(n % 10);
+        n = Math.floor(n/10);
+    }
+    return numArr;
 }
 
 console.log(digitize(35231))

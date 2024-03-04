@@ -10,12 +10,17 @@ Examples:
 */
 
 // First Logic : using if-else condition
+// function isDivisible(n, x, y) {
+//     if (n % x == 0 && n % y == 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// Second Logic : using return condition
 function isDivisible(n, x, y) {
-    if (n % x == 0 && n % y == 0) {
-        return true
-    } else {
-        return false
-    }
+    return n % x === 0 && n % y === 0
 }
 
 console.log(isDivisible(3,3,4))

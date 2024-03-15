@@ -18,9 +18,15 @@ Write a function that will take the number of petals of each flower and return t
 // }
 
 // Second Logic : using simple if else condition
+// function lovefunc(flower1, flower2){
+//     // moment of truth
+//     return flower1 % 2 !== flower2 % 2;
+// }
+
+// Third Logic
 function lovefunc(flower1, flower2){
     // moment of truth
-    return flower1 % 2 !== flower2 % 2;
+    return (flower1 + flower2) % 2 === 1
 }
 
 console.log(lovefunc(1,4))

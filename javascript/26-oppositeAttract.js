@@ -29,6 +29,9 @@ function lovefunc(flower1, flower2){
     return (flower1 + flower2) % 2 === 1
 }
 
+// or u can use thid logic
+// const lovefunc = (Sarah, Timmy) => Boolean((Sarah+Timmy)%2);
+
 console.log(lovefunc(1,4))
 console.log(lovefunc(2,2))
 console.log(lovefunc(0,1))

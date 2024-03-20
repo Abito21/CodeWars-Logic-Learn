@@ -11,6 +11,7 @@ n=-5, m=5:  0
 
 // First Logic : using map() function
 function paperwork(n, m) {
+    // if (n > 0 || m > 0) {
     if (n >= 0 && m >= 0) {
         return n * m
     } else {

@@ -7,8 +7,17 @@ Example:
 */
 
 // First Logic : using map() function
+// function maps(x){
+//     return x.map(n => n * 2)
+// }
+
+// Second Logic : using for and push() array function
 function maps(x){
-    return x.map(n => n * 2)
+    let newArr = []
+    for (i = 0; i < x.length; i++) {
+        newArr.push(x[i] * 2)
+    }
+    return newArr
 }
 
 console.log(maps([1, 2, 3]))

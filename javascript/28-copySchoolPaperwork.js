@@ -9,14 +9,20 @@ n= 5, m=5: 25
 n=-5, m=5:  0
 */
 
-// First Logic : using map() function
-function paperwork(n, m) {
+// First Logic : using if-else statement
+// function paperwork(n, m) {
     // if (n > 0 || m > 0) {
-    if (n >= 0 && m >= 0) {
-        return n * m
-    } else {
-        return 0
-    }
+//     if (n >= 0 && m >= 0) {
+//         return n * m
+//     } else {
+//         return 0
+//     }
+// }
+
+// Second Logic : using ternary statement
+function paperwork(n, m) {
+    // return n > 0 || m > 0 ? n * m : 0
+    return n > 0 && m > 0 ? n * m : 0
 }
 
 console.log(paperwork(5,5))

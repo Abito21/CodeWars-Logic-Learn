@@ -6,9 +6,15 @@ Note: Only valid inputs will be given.
 */
 
 // First Logic : using toString() function
+// function booleanToString(b){
+//     //your code here
+//     return b.toString()
+// }
+
+// Second Logic : using String() function
 function booleanToString(b){
     //your code here
-    return b.toString()
+    return String(b)
 }
 
 console.log(booleanToString(true))

@@ -12,9 +12,15 @@ Note: Only valid inputs will be given.
 // }
 
 // Second Logic : using String() function
+// function booleanToString(b){
+//     //your code here
+//     return String(b)
+// }
+
+// Third Logic : using if-else 
 function booleanToString(b){
     //your code here
-    return String(b)
+    return b ? 'true' : 'false'
 }
 
 console.log(booleanToString(true))

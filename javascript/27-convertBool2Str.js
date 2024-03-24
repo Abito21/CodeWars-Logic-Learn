@@ -1,0 +1,15 @@
+/*
+Problem :
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+*/
+
+// First Logic : using toString() function
+function booleanToString(b){
+    //your code here
+    return b.toString()
+}
+
+console.log(booleanToString(true))
+console.log(booleanToString(false))

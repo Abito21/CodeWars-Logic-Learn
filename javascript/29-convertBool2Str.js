@@ -17,7 +17,7 @@ Note: Only valid inputs will be given.
 //     return String(b)
 // }
 
-// Third Logic : using if-else 
+// Third Logic : using if-else ternary statement
 function booleanToString(b){
     //your code here
     return b ? 'true' : 'false'

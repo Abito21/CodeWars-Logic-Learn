@@ -22,8 +22,16 @@ Names given are always valid strings.
 // }
 
 // Second Logic : using if-else ternary condition
-function areYouPlayingBanjo(name) {
-    return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// function areYouPlayingBanjo(name) {
+//     return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// }
+
+// Third Logic : using if-else ternary statement variable
+const areYouPlayingBanjo = name => {
+	const plays = name.toLowerCase().startsWith('r')
+		? 'plays'
+		: 'does not play';
+	return `${name} ${plays} banjo`;
 }
 
 console.log(areYouPlayingBanjo("Adam"))

@@ -10,14 +10,20 @@ name + " does not play banjo"
 Names given are always valid strings.
 */
 
-// First Logic : using if condition
+// First Logic : using if-else condition
+// function areYouPlayingBanjo(name) {
+//     // Implement me
+//     // if (name[0].toLowerCase() === 'r') {
+//     if (name[0] === "R" || name[0] === "r") {
+//         return `${name} plays banjo`;
+//     } else {
+//         return `${name} does not play banjo`
+//     }
+// }
+
+// Second Logic : using if-else ternary condition
 function areYouPlayingBanjo(name) {
-    // Implement me
-    if (name[0] === "R" || name[0] === "r") {
-        return `${name} plays banjo`;
-    } else {
-        return `${name} does not play banjo`
-    }
+    return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
 }
 
 console.log(areYouPlayingBanjo("Adam"))

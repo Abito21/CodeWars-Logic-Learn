@@ -27,11 +27,18 @@ Names given are always valid strings.
 // }
 
 // Third Logic : using if-else ternary statement variable
-const areYouPlayingBanjo = name => {
-	const plays = name.toLowerCase().startsWith('r')
-		? 'plays'
-		: 'does not play';
-	return `${name} ${plays} banjo`;
+// const areYouPlayingBanjo = name => {
+// 	const plays = name.toLowerCase().startsWith('r')
+// 		? 'plays'
+// 		: 'does not play';
+// 	return `${name} ${plays} banjo`;
+// }
+
+// Fourth Logic : using match() function and RegEx-RegularExpression
+function areYouPlayingBanjo(name) {
+    return name.match(/^r.+/i) ? `${name} plays banjo` : `${name} does not play banjo`;
+    // Also you can use this one using test() function
+    // return name + (/^r/i.test(name) ? " plays " : " does not play ") + "banjo";
 }
 
 console.log(areYouPlayingBanjo("Adam"))
